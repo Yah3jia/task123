@@ -1,26 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MySite</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #d28c8c;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card button {
+    background: #a1004f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Form */
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px;
+}
+
+.form input {
+    padding: 10px;
+    width: 200px;
+}
+
+.form button {
+    padding: 10px 15px;
+    background: #a1004f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Table */
+table {
+    width: 60%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+th {
+    background: #aaa;
+}
+
+</style>
+
 </head>
 <body>
-  <div class="yahia11">
-    <h1>yahia khaled</h1>
-    <p>hjtejtrjtrjtrjtrjtrjtjtjhjte
-        jtrjtrjtrjtrjtrjtjtjhjtejtrjtrjtrjtrj
-        trjtjtjhjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrjtrjtrjtrj
-        tjtjhjtejtrjtrjtrjtrjtrjtjtj
-        hjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrjtrj
-        trjtrjtjtjhjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrjtrjtr
-        jtrjtjtjhjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrjtrjtrjtrjtjt
-        hjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrj
-        trjtrjtrjtjtjhjtejtrjtrjtrjtrjtrjtjtjhjtejtrjtrj
-        trjtrjtrjtjtjhjtejtrjtrjtrjtrjtrjtjt
-    </p>
-  </div>
- 
+
+<!-- Navbar -->
+<div class="navbar">
+    <h2>MySite</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Cards -->
+<div class="container">
+
+    <div class="card">
+        <span class="badge">New</span>
+        <img src="https://via.placeholder.com/300x150">
+        <h3>Frontend</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <button>Join</button>
+    </div>
+
+    <div class="card">
+        <span class="badge">Hot</span>
+        <img src="https://via.placeholder.com/300x150">
+        <h3>Backend</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <button>Join</button>
+    </div>
+
+    <div class="card">
+        <span class="badge">Sale</span>
+        <img src="https://via.placeholder.com/300x150">
+        <h3>Mobile</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <button>Join</button>
+    </div>
+
+</div>
+
+<!-- Form -->
+<div class="form">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <input type="text" placeholder="Your phone number">
+    <button>Send</button>
+</div>
+
+<!-- Table -->
+<table>
+    <tr>
+        <th>Course</th>
+        <th>Price</th>
+    </tr>
+    <tr>
+        <td>Frontend</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Backend</td>
+        <td>$120</td>
+    </tr>
+    <tr>
+        <td>Mobile</td>
+        <td>$150</td>
+    </tr>
+</table>
+
 </body>
 </html>

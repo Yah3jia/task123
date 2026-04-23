@@ -1,24 +1,151 @@
-.body{
-    background-color: antiquewhite;
-}
-.yahia11{
-    background-color: antiquewhite;
-    padding: auto;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    display: inline-block;
-    overflow: auto;
-}
- 
-.div{
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: underline;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.yahia12{
+body {
+    background: #eee;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ff4d6d;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #d28c8c;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    position: relative;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 10px 0;
+}
+
+.card button {
+    background: #a1004f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #7a003b;
+}
+
+/* Form */
+.form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+
+.form input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    padding: 10px 15px;
+    background: #a1004f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Table */
+table {
+    width: 60%;
+    margin: 30px auto;
+    border-collapse: collapse;
     text-align: center;
-     text-transform: capitalize;
-    text-decoration: underline;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+th {
+    background: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        width: 90%;
+    }
 }
